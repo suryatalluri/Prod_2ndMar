@@ -1,0 +1,13 @@
+<wm-page data-ng-controller="AlertPageController"> 
+    <wm-left-panel content="leftnav"></wm-left-panel> 
+    <wm-mobile-navbar></wm-mobile-navbar> 
+    <wm-content> 
+        <wm-page-content columnwidth="12"> 
+            <wm-button class="btn-default" caption="Button" type="button" margin="unset 0.5em" name="button1" on-tap="Widgets.alertdialog1.open()"></wm-button> 
+            <wm-view class="dialog-view" name="view1"> 
+                <wm-alertdialog name="alertdialog1"></wm-alertdialog> 
+            </wm-view> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-mobile-tabbar dataset="home,star,music"></wm-mobile-tabbar> 
+</wm-page>

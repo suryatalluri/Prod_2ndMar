@@ -1,0 +1,16 @@
+<wm-partial name="partial1" data-ng-controller="PartialPageController">
+    <wm-livelist class="media-list" template="true" name="livelist1" dataset="bind:Variables.HrdbEmployeeData.dataSet" itemclass="list-group-item" listclass="list-group" navigation="Pager" itemsperrow="xs-1 sm-1 md-1 lg-1">
+        <wm-listtemplate name="listtemplate1" layout="inline">
+            <wm-container class="media-left" name="container1">
+                <wm-picture class="media-object" width="32pt" height="32pt" name="Picture" shape="circle"></wm-picture>
+            </wm-container>
+            <wm-container class="media-body" name="container2" padding="unset unset unset 1.25em">
+                <wm-label class="p media-heading" name="Name" caption="Name" fontsize="1.143" fontunit="em"></wm-label>
+                <wm-label class="p text-muted" name="JobTitle" caption="JobTitle"></wm-label>
+            </wm-container>
+            <wm-container class="media-right media-top" name="container3">
+                <wm-button class="btn-transparent" name="button1" iconclass="wi wi-share" fontsize="18" fontunit="pt"></wm-button>
+            </wm-container>
+        </wm-listtemplate>
+    </wm-livelist>
+</wm-partial>

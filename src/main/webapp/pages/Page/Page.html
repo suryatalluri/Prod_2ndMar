@@ -1,0 +1,10 @@
+<wm-page name="page1" data-ng-controller="PagePageController">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-prefab name="googlemaps1" prefabname="googlemaps" locations="bind:Variables.deviceVariable1.dataSet" lat="coords.latitude" lng="coords.longitude"></wm-prefab>
+        </wm-page-content>
+    </wm-content>
+    <wm-mobile-tabbar name="mobile_tabbar1" dataset="home,star,music"></wm-mobile-tabbar>
+</wm-page>

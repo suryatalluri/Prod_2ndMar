@@ -1,0 +1,37 @@
+{
+  "deviceVariable1" : {
+    "_id" : "wm-deviceVariable1-wm.DeviceVariable-1488431699064",
+    "name" : "deviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.DeviceVariable",
+    "dataBinding" : [ {
+      "target" : "geolocationHighAccuracy",
+      "value" : true,
+      "type" : "boolean"
+    }, {
+      "target" : "geolocationMaximumAge",
+      "value" : 3,
+      "type" : "number"
+    }, {
+      "target" : "geolocationTimeout",
+      "value" : 5,
+      "type" : "number"
+    } ],
+    "service" : "device",
+    "operation" : "getCurrentGeoPosition",
+    "dataSet" : {
+      "coords" : {
+        "latitude" : 0,
+        "longitude" : 0,
+        "altitude" : 0,
+        "accuracy" : 0,
+        "altitudeAccuracy" : 0,
+        "heading" : 0,
+        "speed" : 0
+      },
+      "timestamp" : 0
+    },
+    "startUpdate" : true,
+    "autoUpdate" : true
+  }
+}

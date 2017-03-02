@@ -30,6 +30,73 @@
     },
     "startUpdate" : true
   },
+  "FileServiceUploadFile" : {
+    "_id" : "wm-FileServiceUploadFile-wm.ServiceVariable-1488428563829",
+    "name" : "FileServiceUploadFile",
+    "owner" : "App",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.prod_2ndmar.fileservice.FileService.FileUploadResponse",
+    "service" : "FileService",
+    "operation" : "uploadFile",
+    "operationId" : "FileController_uploadFile",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "File"
+  },
+  "goToPage_Alert" : {
+    "_id" : "wm-goToPage_Alert-wm.NavigationVariable-1488438070265",
+    "name" : "goToPage_Alert",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Alert",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_apply" : {
+    "_id" : "wm-goToPage_apply-wm.NavigationVariable-1488432587966",
+    "name" : "goToPage_apply",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "apply",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_form" : {
+    "_id" : "wm-goToPage_form-wm.NavigationVariable-1488454240323",
+    "name" : "goToPage_form",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "form",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_liveform" : {
+    "_id" : "wm-goToPage_liveform-wm.NavigationVariable-1488454116902",
+    "name" : "goToPage_liveform",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "liveform",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",
@@ -37,6 +104,28 @@
     "category" : "wm.NavigationVariable",
     "operation" : "gotoPage",
     "pageName" : "Main"
+  },
+  "goToPage_Page" : {
+    "_id" : "wm-goToPage_Page-wm.NavigationVariable-1488431668573",
+    "name" : "goToPage_Page",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "Page",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_test" : {
+    "_id" : "wm-goToPage_test-wm.NavigationVariable-1488435895783",
+    "name" : "goToPage_test",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "test",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
   },
   "supportedLocale" : {
     "_id" : "wm-wm.Variable1402640443182",

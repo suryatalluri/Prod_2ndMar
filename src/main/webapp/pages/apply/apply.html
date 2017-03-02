@@ -1,0 +1,30 @@
+<wm-page data-ng-controller="applyPageController"> 
+    <wm-left-panel content="leftnav"></wm-left-panel> 
+    <wm-mobile-navbar></wm-mobile-navbar> 
+    <wm-content> 
+        <wm-page-content columnwidth="12"> 
+            <wm-container name="container4_1" paddingtop="0.5" paddingright="0.5" paddingbottom="0.5" paddingleft="0.5" paddingunit="em"> 
+                <wm-text name="text1" placeholder="Search" type="search"></wm-text> 
+            </wm-container> 
+            <wm-livelist template="true" name="groupPeopleList" dataset="1, 2, 3" height="100%" listclass="list-group"> 
+                <wm-listtemplate layout="blank" name="listtemplate2"> 
+                    <wm-livelist itemclass="list-group-item" name="livelist3" dataset="1,2,3,4,5,6" title="A" template="true" listclass="list-group" class="panel-default"> 
+                        <wm-listtemplate layout="media" name="listtemplate3"> 
+                            <wm-container class="media-left" name="container3"> 
+                                <wm-picture class="media-object picture" width="30pt" name="picture2" picturesource="http://dev.wavemaker.com/examples/salesrep/Amanda-Brown.png"></wm-picture> 
+                            </wm-container> 
+                            <wm-container class="media-body" data-template-ctr="true" name="container4"> 
+                                <wm-label name="label3" caption="Amanda Brown" width="100%" class="h4 media-heading"></wm-label> 
+                                <wm-label name="label2" width="100%" caption="Sales Rep, Mobeteq Inc" class="list-group-item-text text-muted"></wm-label> 
+                            </wm-container> 
+                            <wm-container class="media-right media-middle" name="container5"> 
+                                <wm-anchor caption="" name="button1" iconclass="wi wi-chevron-right"></wm-anchor> 
+                            </wm-container> 
+                        </wm-listtemplate> 
+                    </wm-livelist> 
+                </wm-listtemplate> 
+            </wm-livelist> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-mobile-tabbar dataset="home,star,music"></wm-mobile-tabbar> 
+</wm-page>

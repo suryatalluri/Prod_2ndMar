@@ -1,0 +1,29 @@
+{
+  "serviceVariable1" : {
+    "_id" : "wm-serviceVariable1-wm.ServiceVariable-1488429238916",
+    "name" : "serviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "file",
+      "value" : "bind:Widgets.fileupload1.uploadedFiles[$i].fileName",
+      "type" : "string"
+    } ],
+    "type" : "com.wavemaker.runtime.file.model.DownloadResponse",
+    "service" : "FileService",
+    "operation" : "getDownloadFile",
+    "operationId" : "FileController_getDownloadFile",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "File"
+  }
+}

@@ -1,4 +1,8 @@
 [ {
+  "name" : "Alert",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "Common",
   "type" : "PARTIAL",
   "params" : [ ]
@@ -11,7 +15,31 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "Page",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Partial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "apply",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "form",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "leftnav",
   "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "liveform",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "test",
+  "type" : "PAGE",
   "params" : [ ]
 } ]

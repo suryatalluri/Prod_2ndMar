@@ -1,5 +1,5 @@
 var _WM_APP_PROPERTIES = {
-  "activeTheme" : "mobile",
+  "activeTheme" : "candy-crush",
   "dateFormat" : "",
   "defaultLanguage" : "en",
   "displayName" : "Prod 2ndMar",
