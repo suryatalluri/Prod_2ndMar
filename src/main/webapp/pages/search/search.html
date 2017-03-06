@@ -1,0 +1,45 @@
+<wm-page name="page1" data-ng-controller="searchPageController">
+    <wm-left-panel name="left_panel1" content="leftnav"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1" defaultview="actionview"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-livelist class="media-list" name="livelist1" dataset="bind:Variables.HrdbEmployeeData.dataSet" itemsperrow="xs-1 sm-1 md-1 lg-1" template="true" itemclass="list-group-item" listclass="list-group" navigation="Pager">
+                <wm-listtemplate name="listtemplate1" layout="inline">
+                    <wm-container class="media-left" name="container1">
+                        <wm-picture class="media-object" name="Picture" height="32pt" width="32pt" picturesource="bind:Variables.HrdbEmployeeData.dataSet.picurl" shape="circle"></wm-picture>
+                    </wm-container>
+                    <wm-container class="media-body" name="container2" padding="unset unset unset 1.25em">
+                        <wm-label class="p media-heading" name="Name" caption="bind:Variables.HrdbEmployeeData.dataSet.firstname" fontsize="1.143" fontunit="em"></wm-label>
+                        <wm-label class="p text-muted" name="JobTitle" caption="bind:Variables.HrdbEmployeeData.dataSet.jobTitle"></wm-label>
+                        <wm-label name="label3" caption="bind:Widgets.livelist1.currentItemWidgets.Name.caption" padding="unset 0.5em"></wm-label>
+                        <wm-livelist class="media-list" name="livelist2" dataset="bind:Variables.HrdbUserData.dataSet" itemsperrow="xs-1 sm-1 md-1 lg-1" template="true" itemclass="list-group-item" listclass="list-group" navigation="Pager">
+                            <wm-listtemplate name="listtemplate2" layout="inline">
+                                <wm-container class="media-left" name="container4">
+                                    <wm-picture class="media-object" name="Picture" height="32pt" width="32pt" shape="circle"></wm-picture>
+                                </wm-container>
+                                <wm-container class="media-body" name="container5" padding="unset unset unset 1.25em">
+                                    <wm-label class="p media-heading" name="Name" caption="bind:Variables.HrdbUserData.dataSet.username" fontsize="1.143" fontunit="em"></wm-label>
+                                    <wm-label class="p text-muted" name="JobTitle" caption="bind:Variables.HrdbUserData.dataSet.role"></wm-label>
+                                    <wm-label name="label6" caption="bind:Widgets.livelist1.currentItemWidgets.label3.caption" padding="unset 0.5em"></wm-label>
+                                </wm-container>
+                                <wm-container class="media-right media-top" name="container6">
+                                    <wm-button class="btn-transparent" name="button2" fontsize="18" iconclass="wi wi-share" fontunit="pt"></wm-button>
+                                </wm-container>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-container>
+                    <wm-container class="media-right media-top" name="container3">
+                        <wm-button class="btn-transparent" name="button1" fontsize="18" iconclass="wi wi-share" fontunit="pt"></wm-button>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-livelist>
+            <wm-prefab name="QRCode1" prefabname="QRCode"></wm-prefab>
+            <wm-chart title="Area Chart" type="Area" name="chart1" height="250px" iconclass="fa fa-area-chart" dataset="bind:Variables.liveVariable1.dataSet" xaxisdatakey="deptCode" yaxisdatakey="q1,q2,q3,q4" groupby="deptCode"></wm-chart>
+        </wm-page-content>
+    </wm-content>
+    <wm-mobile-tabbar name="mobile_tabbar1" dataset="home,star,music"></wm-mobile-tabbar>
+    <wm-view class="dialog-view" name="view1">
+        <wm-alertdialog title="{{notification.title}}" name="notificationalertdialog" controller="NotificationDialogController" message="{{notification.text}}" on-close="variableOnClose()" oktext="{{notification.okButtonText}}" on-ok="variableOnOk()" notificationdialog="alert"
+        alerttype="{{notification.alerttype}}"></wm-alertdialog>
+    </wm-view>
+</wm-page>

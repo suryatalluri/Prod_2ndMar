@@ -1,0 +1,19 @@
+<wm-page name="page1" data-ng-controller="checkbox1PageController">
+    <wm-left-panel name="left_panel1" content="leftnav"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-composite name="composite1">
+                <wm-checkbox name="checkbox1" caption="bind:Variables.liveVariable1.dataSet.data[$i].city"></wm-checkbox>
+            </wm-composite>
+            <wm-composite name="composite2">
+                <wm-label class="col-xs-4 control-label" name="label1"></wm-label>
+                <wm-container class="col-xs-8" name="container1">
+                    <wm-checkboxset name="checkboxset1" height="auto" dataset="fcwdsfrdfdfvvrdesfvrdsfvrdsfvd, gfgjgfcjdgkjwgfjhdjkhfijdhwjfhdjwhw, ifchdkwhfjhdjwfijhrwdjknfkjwdhfijdnwoifoiew"></wm-checkboxset>
+                </wm-container>
+            </wm-composite>
+            <wm-spinner name="spinner1" show="true" caption="Test"></wm-spinner>
+        </wm-page-content>
+    </wm-content>
+    <wm-mobile-tabbar name="mobile_tabbar1" dataset="home,star,music"></wm-mobile-tabbar>
+</wm-page>

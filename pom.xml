@@ -13,7 +13,28 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/AdventureWorks2014/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/Cities/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/FileService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/dbscenarios/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -110,7 +131,11 @@
                         </goals>
                         <configuration>
                             <sources>
+                            
+                                <source>services/AdventureWorks2014/src</source>
+                                <source>services/Cities/src</source>
                                 <source>services/FileService/src</source>
+                                <source>services/dbscenarios/src</source>
                                 <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
@@ -293,6 +318,18 @@
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+        <dependency>
+            <groupId>sqljdbc4-4.0</groupId>
+            <artifactId>sqljdbc4-4.0</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/sqljdbc4-4.0.jar</systemPath>
         </dependency>
     </dependencies>
     <dependencyManagement>

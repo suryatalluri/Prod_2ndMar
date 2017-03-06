@@ -27,7 +27,23 @@
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "checkbox",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "checkbox1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "datetime",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "form",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "issue",
   "type" : "PAGE",
   "params" : [ ]
 }, {
@@ -35,7 +51,23 @@
   "type" : "LEFTNAV",
   "params" : [ ]
 }, {
+  "name" : "list",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "list111",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "liveform",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "liveform1",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "search",
   "type" : "PAGE",
   "params" : [ ]
 }, {

@@ -1,0 +1,134 @@
+{
+  "description" : null,
+  "draft" : false,
+  "name" : "AdventureWorks2014",
+  "packageName" : "com.prod_2ndmar.adventureworks2014",
+  "tables" : [ {
+    "catalog" : "AdventureWorks2014",
+    "columns" : [ {
+      "columnValue" : {
+        "type" : "user-defined",
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : null
+      },
+      "fieldName" : "departmentId",
+      "foreignKey" : false,
+      "generatorType" : "identity",
+      "generatorValue" : null,
+      "javaType" : "short",
+      "length" : 0,
+      "name" : "DepartmentID",
+      "nullable" : false,
+      "oldName" : "DepartmentID",
+      "partOfAnyRelation" : false,
+      "partOfForeignKey" : false,
+      "partOfPrimaryKey" : true,
+      "partOfUniqueKey" : true,
+      "precision" : 5,
+      "primaryKey" : true,
+      "scale" : 0,
+      "sqlType" : "number",
+      "unique" : true
+    }, {
+      "columnValue" : {
+        "type" : "user-defined",
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : null
+      },
+      "fieldName" : "name",
+      "foreignKey" : false,
+      "generatorType" : "assigned",
+      "generatorValue" : null,
+      "javaType" : "string",
+      "length" : 50,
+      "name" : "Name",
+      "nullable" : false,
+      "oldName" : "Name",
+      "partOfAnyRelation" : false,
+      "partOfForeignKey" : false,
+      "partOfPrimaryKey" : false,
+      "partOfUniqueKey" : true,
+      "precision" : 0,
+      "primaryKey" : false,
+      "scale" : 0,
+      "sqlType" : "string",
+      "unique" : true
+    }, {
+      "columnValue" : {
+        "type" : "user-defined",
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : null
+      },
+      "fieldName" : "groupName",
+      "foreignKey" : false,
+      "generatorType" : "assigned",
+      "generatorValue" : null,
+      "javaType" : "string",
+      "length" : 50,
+      "name" : "GroupName",
+      "nullable" : false,
+      "oldName" : "GroupName",
+      "partOfAnyRelation" : false,
+      "partOfForeignKey" : false,
+      "partOfPrimaryKey" : false,
+      "partOfUniqueKey" : false,
+      "precision" : 0,
+      "primaryKey" : false,
+      "scale" : 0,
+      "sqlType" : "string",
+      "unique" : false
+    }, {
+      "columnValue" : {
+        "type" : "user-defined",
+        "insertable" : true,
+        "updatable" : true,
+        "defaultValue" : null
+      },
+      "fieldName" : "modifiedDate",
+      "foreignKey" : false,
+      "generatorType" : "assigned",
+      "generatorValue" : null,
+      "javaType" : "datetime",
+      "length" : 0,
+      "name" : "ModifiedDate",
+      "nullable" : false,
+      "oldName" : "ModifiedDate",
+      "partOfAnyRelation" : false,
+      "partOfForeignKey" : false,
+      "partOfPrimaryKey" : false,
+      "partOfUniqueKey" : false,
+      "precision" : 0,
+      "primaryKey" : false,
+      "scale" : 0,
+      "sqlType" : "datetime",
+      "unique" : false
+    } ],
+    "constraints" : [ {
+      "columns" : [ "Name" ],
+      "composite" : false,
+      "name" : "UK_2rybb7g15trlvfe8og3pwo93f",
+      "type" : "UNIQUE",
+      "virtual" : false
+    } ],
+    "entityName" : "Department",
+    "fullyQualifiedName" : "com.prod_2ndmar.adventureworks2014.Department",
+    "name" : "Department",
+    "oldName" : "Department",
+    "primaryKey" : {
+      "columns" : [ "DepartmentID" ],
+      "composite" : false,
+      "generator" : {
+        "generatorType" : "identity",
+        "generatorValue" : null
+      },
+      "name" : "PK_Department_DepartmentID",
+      "virtual" : false
+    },
+    "relations" : [ ],
+    "schema" : "HumanResources",
+    "type" : "TABLE"
+  } ]
+}

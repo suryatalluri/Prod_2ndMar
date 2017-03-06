@@ -1,0 +1,15 @@
+{
+  "test12" : {
+    "_id" : "wm-test12-wm.Variable-1488521933572",
+    "name" : "test12",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

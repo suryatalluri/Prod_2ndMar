@@ -8,6 +8,8 @@
         <variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value="To provide photo browsing picker"/>
     </plugin>
     <plugin name="cordova-plugin-geolocation" spec="2.4.0"/>
+    <plugin name="cordova-plugin-file" spec="4.3.0"/>
+    <plugin name="cordova-plugin-file-transfer" spec="1.6.0"/>
     <platform name="android">
         <splash density="land-ldpi" qualifier="land-ldpi" height="0" src="resources/assets/android/splashes/drawable_land_ldpi/splash.png" width="0"/>
         <splash density="land-mdpi" qualifier="land-mdpi" height="0" src="resources/assets/android/splashes/drawable_land_mdpi/splash.png" width="0"/>

@@ -1,13 +1,56 @@
-<wm-page name="mainpage" data-ng-controller="MainPageController">
-    <wm-left-panel content="leftnav" name="left_panel1" columnwidth="2"></wm-left-panel>
-    <wm-mobile-navbar title="Title" name="mobile_navbar1" backbutton="false" leftnavpaneliconclass="wi wi-menu">
-        <wm-anchor name="AddLink" caption="" iconclass="wi wi-plus"></wm-anchor>
+<wm-page data-ng-controller="MainPageController" name="mainpage">
+    <wm-left-panel name="left_panel1" content="leftnav" columnwidth="2"></wm-left-panel>
+    <wm-mobile-navbar title="Title" name="mobile_navbar1" leftnavpaneliconclass="wi wi-menu" backbutton="false">
+        <wm-anchor caption="" name="AddLink" iconclass="wi wi-plus"></wm-anchor>
     </wm-mobile-navbar>
     <wm-content name="content1">
         <wm-page-content name="page_content1" columnwidth="12">
-            <wm-fileupload name="fileupload1" contenttype="image" service="FileService" operation="uploadFile"></wm-fileupload>
-            <wm-button class="btn-default" type="button" name="button1" caption="Button" margin="unset 0.5em" on-Tap="Variables.serviceVariable1.invoke()"></wm-button>
-            <wm-button class="btn-default" type="button" name="button2" caption="Button" margin="unset 0.5em"></wm-button>
+            <wm-fileupload name="fileupload1" operation="uploadFile" service="FileService" contenttype="image"></wm-fileupload>
+            <wm-button class="btn-default" type="button" caption="Button" name="button1" on-tap="Variables.serviceVariable1.invoke()" margin="unset 0.5em"></wm-button>
+            <wm-button class="btn-default" type="button" caption="Button" name="button2" margin="unset 0.5em"></wm-button>
+            <wm-liveform title="User Info" name="liveform1" captionposition="top" iconclass="wi wi-edit" dataset="bind:Variables.HrdbUserData.dataSet" formlayout="inline" errormessage="" novalidate="false" defaultmode="Edit" captionalign="left">
+                <wm-layoutgrid name="layoutgrid1" columns="1">
+                    <wm-gridrow name="gridrow1">
+                        <wm-gridcolumn name="gridcolumn1" columnwidth="12">
+                            <wm-form-field type="string" readonly="false" show="true" name="username" placeholder="Enter value" widget="text" maxchars="20" key="username" primary-key="false" generator="assigned" required="false" displayname="Username" inputtype="text"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow2">
+                        <wm-gridcolumn name="gridcolumn2" columnwidth="12">
+                            <wm-form-field type="string" readonly="false" show="true" name="password" placeholder="Enter value" widget="text" maxchars="20" key="password" primary-key="false" generator="assigned" required="false" displayname="Password" inputtype="text"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn name="gridcolumn3" columnwidth="12">
+                            <wm-form-field type="string" readonly="false" show="true" name="role" placeholder="Enter value" widget="text" maxchars="20" key="role" primary-key="false" generator="assigned" required="false" displayname="Role" inputtype="text"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow4">
+                        <wm-gridcolumn name="gridcolumn4" columnwidth="12">
+                            <wm-form-field type="integer" readonly="false" show="true" name="tenantId" placeholder="Enter value" widget="number" key="tenantId" primary-key="false" generator="assigned" required="false" displayname="Tenant Id" step="0" inputtype="number"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow1">
+                        <wm-gridcolumn name="gridcolumn1" columnwidth="12">
+                            <wm-form-field type="string" show="true" name="custom" placeholder="Enter value" widget="text" key="custom" displayname="Custom field" inputtype="text"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow2">
+                        <wm-gridcolumn name="gridcolumn2" columnwidth="12">
+                            <wm-form-field type="string" show="true" name="custom1" widget="number" key="custom1" displayname="Custom field"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-form-field type="integer" readonly="true" show="false" name="userId" placeholder="Enter value" widget="number" key="userId" primary-key="true" generator="identity" required="true" displayname="User Id" step="0" inputtype="number"></wm-form-field>
+                <!--?XML:NAMESPACE PREFIX = "PUBLIC" NS = "URN:COMPONENT" /-->
+                <!--?XML:NAMESPACE PREFIX = "PUBLIC" NS = "URN:COMPONENT" /-->
+                <!--?XML:NAMESPACE PREFIX = "PUBLIC" NS = "URN:COMPONENT" /-->
+                <!--?XML:NAMESPACE PREFIX = "PUBLIC" NS = "URN:COMPONENT" /-->
+                <!--?XML:NAMESPACE PREFIX = "PUBLIC" NS = "URN:COMPONENT" /-->
+                <wm-form-action title="Reset" disabled="false" class="form-reset btn-secondary" type="button" show="true" iconclass="wi wi-refresh" key="reset" update-mode="true" display-name="Reset" action="reset()"></wm-form-action>
+                <!--?XML:NAMESPACE PREFIX = "PUBLIC" NS = "URN:COMPONENT" /-->
+                <wm-form-action title="Save" disabled="false" class="form-save btn-success" type="submit" show="true" iconclass="wi wi-save" key="save" update-mode="true" display-name="Save"></wm-form-action>
+            </wm-liveform>
         </wm-page-content>
     </wm-content>
     <wm-mobile-tabbar name="mobile_tabbar1" dataset="home,music,edit"></wm-mobile-tabbar>

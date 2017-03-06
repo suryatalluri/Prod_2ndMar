@@ -19,6 +19,8 @@
     "isList" : false,
     "maxResults" : 20,
     "designMaxResults" : 10,
+    "onBeforeUpdate" : "serviceVariable1onBeforeUpdate($event, $scope)",
+    "onError" : "serviceVariable1onError($event, $scope)",
     "startUpdate" : false,
     "autoUpdate" : false,
     "inFlightBehavior" : "executeLast",

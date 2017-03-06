@@ -10,13 +10,13 @@
     "enforceXssSecurity" : false,
     "policyFile" : "wm-xss-policies.xml",
     "xssFilterStrategy" : "NONE",
-    "policyType" : null
+    "policyType" : "IMPORT"
   },
   "csrfConfig" : {
     "enforceCsrfSecurity" : false,
     "headerName" : "X-WM-XSRF-TOKEN"
   },
-  "authProviders" : [ "DEMO" ],
+  "authProviders" : [ "DATABASE" ],
   "login" : {
     "type" : "PAGE",
     "pageName" : "Login",

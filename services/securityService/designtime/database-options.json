@@ -1,0 +1,19 @@
+{
+  "modelName" : null,
+  "entityName" : null,
+  "tableName" : null,
+  "unamePropertyName" : null,
+  "unameColumnName" : null,
+  "uidPropertyName" : null,
+  "uidColumnName" : null,
+  "pwPropertyName" : null,
+  "pwColumnName" : null,
+  "rolePropertyName" : "",
+  "roleColumnName" : "",
+  "useRolesQuery" : false,
+  "rolesByUsernameQuery" : "",
+  "tenantIdField" : null,
+  "defTenantId" : 0,
+  "tenantIdPropertyName" : null,
+  "queryType" : "HQL"
+}

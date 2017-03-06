@@ -1,0 +1,15 @@
+<wm-page name="page1" data-ng-controller="datetimePageController">
+    <wm-left-panel name="left_panel1" content="leftnav"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-composite name="composite1">
+                <wm-label class="col-xs-4 control-label" name="label1"></wm-label>
+                <wm-container class="col-xs-8" name="container1">
+                    <wm-datetime name="datetime1"></wm-datetime>
+                </wm-container>
+            </wm-composite>
+        </wm-page-content>
+    </wm-content>
+    <wm-mobile-tabbar name="mobile_tabbar1" dataset="home,star,music"></wm-mobile-tabbar>
+</wm-page>
